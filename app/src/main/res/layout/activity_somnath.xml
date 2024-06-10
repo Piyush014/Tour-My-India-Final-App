@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Somnath">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/somnath" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="115dp"
+            android:text="Somnath Temple"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="9dp"
+            android:text="Click Here For Location"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toStartOf="@+id/gmap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <Button
+            android:id="@+id/gmap"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="27dp"
+            android:foreground="@drawable/gmp"
+            android:text="Button"
+            android:onClick="openMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/gmap">
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:text="• The Somnath temple, also called Somanātha temple or Deo Patan, is located in Prabhas Patan, Veraval in Gujarat, India. One of the most sacred pilgrimage sites for the Hindus, they believe it to be the first among the twelve Jyotirlinga shrines of Shiva. Reconstructed several times in the past after repeated destruction by several Muslim invaders and rulers, it is unclear when the first version of the Somnath temple was built. Estimates for the first Somnath temple vary between the early centuries of the 1st-millennium to about the 9th-century CE.\n\n• After India's independence, those ruins were demolished and the present Somnath temple was reconstructed in the Māru-Gurjara style of Hindu temple architecture. The contemporary Somnath temple's reconstruction was started under the orders of the first Home Minister of India Vallabhbhai Patel and completed in May 1951 after his death. Presently the Prime Minister of India Narendra Modi is the chairman of Shree Somnath Mandir trust.\n\n• Location: The Somnath temple is located along the coastline in Prabhas Patan near Veraval, Saurashtra region of Gujarat. It is about 400 kilometres (249 mi) southwest of Ahmedabad, 82 kilometres (51 mi) south of Junagadh – another major archaeological and pilgrimage site in Gujarat. It is about 7 kilometres (4 mi) southeast of the Veraval railway junction, about 130 kilometres (81 mi) southeast of the Porbandar airport and about 85 kilometres (53 mi) west of the Diu airport.\n\n• The Somnath temple is located close to the ancient trading port of Veraval, one of three in Gujarat from where Indian merchants departed to trade goods. The 11th-century Persian historian Al-Biruni states that Somnath has become so famous because" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
